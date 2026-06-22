@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios | Soluciones Digitales</title>
+    <style>
+        /* Estilos globales para un diseño limpio y moderno */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Fondo simple, gris claro y profesional */
+            color: #333333;
+        }
+
+        header {
+            background-color: #1e293b; /* Azul marino oscuro */
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Rejilla (Grid) para mostrar los servicios lado a lado */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid #3b82f6; /* Detalle azul en la parte superior */
+        }
+
+        /* Efecto sutil al pasar el mouse por encima */
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card h2 {
+            color: #1e293b;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #3b82f6;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e293b;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones a medida para impulsar tus proyectos e ideas</p>
+    </header>
+
+    <div class="container">
+        <div class="services-grid">
+
+            <!-- Servicio 1 -->
+            <div class="service-card">
+                <h2>Diseño Web Responsive</h2>
+                <p>Creamos sitios web modernos, rápidos y adaptables a cualquier dispositivo (móviles, tablets y ordenadores). Diseños enfocados en la experiencia de usuario.</p>
+                <span class="price">Desde 299€</span>
+                <a href="#" class="btn">Saber más</a>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="service-card">
+                <h2>Marketing Digital</h2>
+                <p>Aumenta tu visibilidad y atrae clientes potenciales mediante campañas estratégicas en redes sociales, anuncios pagados y optimización de conversiones.</p>
+                <span class="price">Desde 199€/mes</span>
+                <a href="#" class="btn">Saber más</a>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-card">
+                <h2>Posicionamiento SEO</h2>
+                <p>Optimizamos tu estructura web y contenido para que tu negocio aparezca en los primeros resultados de Google de forma orgánica y duradera.</p>
+                <span class="price">Desde 249€/mes</span>
+                <a href="#" class="btn">Saber más</a>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="service-card">
+                <h2>Mantenimiento Técnico</h2>
+                <p>Soporte continuo, actualizaciones de seguridad, copias de seguridad diarias y resolución de problemas para que tu web nunca deje de funcionar.</p>
+                <span class="price">Desde 49€/mes</span>
+                <a href="#" class="btn">Saber más</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Soluciones Digitales. Todos los derechos reservados. Diseñado en Sublime Text.</p>
+    </footer>
+
+</body>
+</html>

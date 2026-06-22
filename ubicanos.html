@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubícanos | Soluciones Digitales</title>
+    <style>
+        /* Estilos globales y fondo simple */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Mismo fondo gris claro */
+            color: #333333;
+        }
+
+        header {
+            background-color: #1e293b; /* Azul marino oscuro */
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Distribución en dos columnas: Texto y Mapa */
+        .grid-ubicanos {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .grid-ubicanos {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Columna de detalles */
+        .detalles-oficina h2 {
+            color: #1e293b;
+            margin-top: 0;
+        }
+
+        .indicaciones {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #3b82f6;
+            margin-top: 1.5rem;
+        }
+
+        .indicaciones h3 {
+            margin-top: 0;
+            color: #475569;
+            font-size: 1.1rem;
+        }
+
+        /* Contenedor del Mapa */
+        .mapa-container {
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            height: 400px;
+            overflow: hidden;
+        }
+
+        /* Mapa simulado elegante con CSS */
+        .mapa-simulado {
+            width: 100%;
+            height: 100%;
+            background-color: #e2e8f0;
+            border-radius: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #64748b;
+            border: 2px dashed #cbd5e1;
+        }
+
+        .mapa-simulado span {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo para cuando pongas un mapa real de Google Maps */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e293b;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ubícanos</h1>
+        <p>Visita nuestras oficinas centrales y conoce a nuestro equipo</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-ubicanos">
+            
+            <!-- Columna Izquierda: Información de localización -->
+            <div class="detalles-oficina">
+                <h2>¿Dónde estamos?</h2>
+                <p>Nuestras oficinas están ubicadas en el corazón financiero de la ciudad, un punto estratégico y de fácil acceso para todos nuestros clientes.</p>
+                
+                <p><strong>Dirección:</strong><br>Av. Principal #123, Piso 4, Oficina 402<br>Colonia Centro, Ciudad de México</p>
+                
+                <div class="indicaciones">
+                    <h3>🚗 ¿Cómo llegar en transporte?</h3>
+                    <p style="margin: 0; font-size: 0.95rem; color: #475569;">
+                        Estamos a solo dos calles de la estación de Metro central. Si vienes en coche, contamos con estacionamiento público regulado justo frente al edificio comercial.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: El Mapa -->
+            <div class="mapa-container">
+                
+                <!-- MAPA SIMULADO (Elimina este bloque completo si vas a usar un iframe real de Google Maps) -->
+                <div class="mapa-simulado">
+                    <span>📍</span>
+                    <p><strong>[ Aquí va tu Mapa de Google ]</strong></p>
+                    <p style="font-size: 0.85rem; padding: 0 1rem;">Para poner un mapa real, ve a Google Maps, busca tu dirección, haz clic en "Compartir" > "Insertar un mapa" y reemplaza este bloque con el código iframe que te den.</p>
+                </div>
+
+                <!-- DESCOMENTA ESTA LÍNEA DE ABAJO PARA USAR UN MAPA REAL (Quita las etiquetas de comentario <!-- -->) -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.546194212564!2d-99.1633!3d19.4326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzU3LjQiTiA5OcKwMDknNDcuOSJX!5e0!3m2!1ses!2smx!4v1620000000000!5m2!1ses!2smx" allowfullscreen="" loading="lazy"></iframe> -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Soluciones Digitales. Todos los derechos reservados. Diseñado en Sublime Text.</p>
+    </footer>
+
+</body>
+</html>

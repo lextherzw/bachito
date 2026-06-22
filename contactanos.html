@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos | Soluciones Digitales</title>
+    <style>
+        /* Estilos globales y fondo simple */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Fondo gris claro limpio */
+            color: #333333;
+        }
+
+        header {
+            background-color: #1e293b; /* Azul marino oscuro coincidente */
+            color: #ffffff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide en dos columnas: Info y Formulario */
+            gap: 3rem;
+        }
+
+        /* Adaptabilidad para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Columna de Información */
+        .info-col h2 {
+            color: #1e293b;
+            margin-top: 0;
+        }
+
+        .info-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #3b82f6; /* Azul de acento */
+            font-size: 1.1rem;
+        }
+
+        /* Columna del Formulario */
+        .form-col {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            box-sizing: border-box; /* Evita que el input se salga del contenedor */
+            transition: border-color 0.2s;
+        }
+
+        /* Efecto al hacer clic en los campos */
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .btn-submit {
+            display: inline-block;
+            width: 100%;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1e293b;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contáctanos</h1>
+        <p>¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Columna Izquierda: Datos de contacto -->
+        <div class="info-col">
+            <h2>Información de Contacto</h2>
+            <p>Estamos disponibles para resolver tus dudas, ofrecerte un presupuesto personalizado o simplemente charlar sobre tu próxima gran idea.</p>
+            
+            <div class="info-item">
+                <strong>📍 Ubicación</strong>
+                <p>Av. Principal #123, Ciudad de México, México</p>
+            </div>
+
+            <div class="info-item">
+                <strong>📧 Correo Electrónico</strong>
+                <p>hola@solucionesdigitales.com</p>
+            </div>
+
+            <div class="info-item">
+                <strong>📞 Teléfono</strong>
+                <p>+52 55 1234 5678</p>
+            </div>
+
+            <div class="info-item">
+                <strong>⏰ Horario de Atención</strong>
+                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario -->
+        <div class="form-col">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Soluciones Digitales. Todos los derechos reservados. Diseñado en Sublime Text.</p>
+    </footer>
+
+</body>
+</html>
